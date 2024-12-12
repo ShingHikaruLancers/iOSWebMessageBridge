@@ -25,7 +25,11 @@ struct WebView: UIViewRepresentable {
         if let filePath = Bundle.main.path(forResource: "index", ofType: "html") {
             // filePathに変換する
             // file:///../../../../WebViewMessageApp.app/index.html
-            let fileURL = URL(fileURLWithPath: filePath)
+            let fileURL = if #available(iOS 16.0, *) {
+                URL(filePath: filePath, directoryHint: .notDirectory) 
+            } else {
+                URL(fileURLWithPath: filePath)
+            }
             // 今回の場合、index.htmlファイルへのアクセス権限のみ必要であるため、index.htmlファイルへの読み取り権限を付与しているが、CSS, JSなどの他のWebコンテンツがある場合、アプリのディレクトリに対する権限付与が必要になるため、以下のように変更。
             // fileURL -> fileURL.deletingLastPathComponent()
             webView.loadFileURL(fileURL, allowingReadAccessTo: fileURL)
