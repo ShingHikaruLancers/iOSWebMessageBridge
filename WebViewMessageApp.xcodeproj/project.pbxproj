@@ -14,6 +14,8 @@
 		CF29FF982D06E2AA00926A73 /* WebViewMessageAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29FF972D06E2AA00926A73 /* WebViewMessageAppTests.swift */; };
 		CF29FFA22D06E2AA00926A73 /* WebViewMessageAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29FFA12D06E2AA00926A73 /* WebViewMessageAppUITests.swift */; };
 		CF29FFA42D06E2AA00926A73 /* WebViewMessageAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29FFA32D06E2AA00926A73 /* WebViewMessageAppUITestsLaunchTests.swift */; };
+		CF29FFB12D06E4F200926A73 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29FFB02D06E4F200926A73 /* WebView.swift */; };
+		CF6BE8E22D0A77C100B2DEED /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CF6BE8E12D0A77C000B2DEED /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		CF29FF9D2D06E2AA00926A73 /* WebViewMessageAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewMessageAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF29FFA12D06E2AA00926A73 /* WebViewMessageAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewMessageAppUITests.swift; sourceTree = "<group>"; };
 		CF29FFA32D06E2AA00926A73 /* WebViewMessageAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewMessageAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF29FFB02D06E4F200926A73 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		CF6BE8E12D0A77C000B2DEED /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,10 @@
 		CF29FF852D06E2A700926A73 /* WebViewMessageApp */ = {
 			isa = PBXGroup;
 			children = (
+				CF6BE8E12D0A77C000B2DEED /* index.html */,
 				CF29FF862D06E2A700926A73 /* WebViewMessageAppApp.swift */,
 				CF29FF882D06E2A700926A73 /* ContentView.swift */,
+				CF29FFB02D06E4F200926A73 /* WebView.swift */,
 				CF29FF8A2D06E2AA00926A73 /* Assets.xcassets */,
 				CF29FF8C2D06E2AA00926A73 /* Preview Content */,
 			);
@@ -231,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6BE8E22D0A77C100B2DEED /* index.html in Resources */,
 				CF29FF8E2D06E2AA00926A73 /* Preview Assets.xcassets in Resources */,
 				CF29FF8B2D06E2AA00926A73 /* Assets.xcassets in Resources */,
 			);
@@ -257,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF29FFB12D06E4F200926A73 /* WebView.swift in Sources */,
 				CF29FF892D06E2A700926A73 /* ContentView.swift in Sources */,
 				CF29FF872D06E2A700926A73 /* WebViewMessageAppApp.swift in Sources */,
 			);

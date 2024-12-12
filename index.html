@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Web to iOS Message</title>
+</head>
+<body>
+    <h1>Hello, iOS with SwiftUI!</h1>
+    <!-- ボタンタップでiOS側でログ出力されるようにする -->
+    <button onclick="sendMessageToiOS()">Send Message to iOS</button>
+
+    <script>
+        // 実行するスクリプト
+        function sendMessageToiOS() {
+            // iosListenerはiOS側のWebViewの実装の以下で示したメソッド名
+            // contentController.add(context.coordinator, name: "iosListener")
+            if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.iosListener) {
+                window.webkit.messageHandlers.iosListener.postMessage('Hello from Web!');
+            }
+        }
+    </script>
+</body>
+</html>
