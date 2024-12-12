@@ -7,11 +7,11 @@
 <body>
     <h1>Hello, iOS with SwiftUI!</h1>
     <!-- ボタンタップでiOS側でログ出力されるようにする -->
-    <button onclick="sendMessageToiOS()">Send Message to iOS</button>
+    <button onclick="sendMessageToIOS()">Send Message to iOS</button>
 
     <script>
         // 実行するスクリプト
-        function sendMessageToiOS() {
+        function sendMessageToIOS() {
             // iosListenerはiOS側のWebViewの実装の以下で示したメソッド名
             // contentController.add(context.coordinator, name: "iosListener")
             if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.iosListener) {
